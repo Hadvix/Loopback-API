@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 // co pošleš v body, to se ti vrátí
-app.post('/loapback', (req, res) => {
+app.post('/loopback', (req, res) => {
   res.json(req.body);
 });
 
