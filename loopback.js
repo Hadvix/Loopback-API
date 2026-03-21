@@ -7,7 +7,7 @@ const PORT = 3000;
 //middleware pro jsony
 app.use(express.json());
 
-const jsonData = {
+const TEST_JSON_DATA = {
   firstName: 'Bilbo',
   lastName: 'Pytlík',
   city: 'Hobitín'
@@ -15,7 +15,7 @@ const jsonData = {
 
 // res.json() zajistí lepší chování než res.send(), které pošle i text
 app.get('/', (req, res) => {
-  res.status(200).json(jsonData);
+  res.status(200).json(TEST_JSON_DATA);
 });
 
 // co pošleš v body, to se ti vrátí
